@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xmlns:nt="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:rain="http://schemas.android.com/apk/res-auto"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:music="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context="com.zhang.myview.MainActivity">
+
+    <!--<com.zhang.myview.baseview.v1.MyView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<com.zhang.myview.baseview.v2.LogicView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<com.zhang.myview.baseview.v4.NumText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone"-->
+    <!--nt:lineNum="8"-->
+    <!--nt:xScroll="true" />-->
+
+    <!--<com.zhang.myview.rain.v2.RainView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:color/black"-->
+    <!--rain:rainNum="100"-->
+    <!--rain:randColor="true" />-->
+
+    <com.zhang.myview.music.MusicView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        music:itemNum="12"
+        music:itemWidth="20dp"
+        music:musicColor="@color/colorAccent"
+        music:musicRandColor="true"
+        music:musicType="RECT"/>
+    <com.zhang.myview.music.MusicView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        music:itemNum="12"
+        music:itemWidth="20dp"
+        music:musicColor="@color/colorAccent"
+        music:musicRandColor="true"
+        music:musicType="MRECT"/>
+    <com.zhang.myview.music.MusicView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        music:itemNum="12"
+        music:itemWidth="20dp"
+        music:musicColor="@color/colorAccent"
+        music:musicRandColor="true"
+        music:musicType="MMRECT"/>
+</LinearLayout>
